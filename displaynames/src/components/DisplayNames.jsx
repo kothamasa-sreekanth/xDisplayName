@@ -5,14 +5,12 @@ const DisplayNames = () => {
   const [LastName, setLastName] = useState("");
   const [FullName, setFullName] = useState("");
 
-
   const handlesubmit = (e) => {
     e.preventDefault();
     if (FirstName.trim() && LastName.trim()) {
       setFullName(`${FirstName} ${LastName}`);
       setFirstName("");
       setLastName("");
-
     }
   };
 
